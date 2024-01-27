@@ -29,3 +29,16 @@ class Thing {
     this._size = num;
   }
 }
+
+
+class Person {
+  constructor(protected ssn: string, private firstName: string, private lastName: string) {
+    this.ssn = ssn;
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  getFullName(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
